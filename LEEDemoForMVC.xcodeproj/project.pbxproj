@@ -1,0 +1,817 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		142A0858CB3F777A764AB6FC /* Pods_LEEDemoForMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 628182512402161960BBAD6E /* Pods_LEEDemoForMVC.framework */; };
+		8E49C2E42248A56D0073B34D /* LEEAutoScaleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E49C2E32248A56D0073B34D /* LEEAutoScaleLayout.m */; };
+		8E854B0A223923C50083689D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B09223923C50083689D /* AppDelegate.m */; };
+		8E854B0D223923C50083689D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B0C223923C50083689D /* MainViewController.m */; };
+		8E854B10223923C50083689D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E854B0E223923C50083689D /* Main.storyboard */; };
+		8E854B15223923D40083689D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E854B13223923D40083689D /* LaunchScreen.storyboard */; };
+		8E854B18223923D40083689D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B17223923D40083689D /* main.m */; };
+		8E854B22223923D40083689D /* LEEDemoForMVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B21223923D40083689D /* LEEDemoForMVCTests.m */; };
+		8E854B2D223923D40083689D /* LEEDemoForMVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B2C223923D40083689D /* LEEDemoForMVCUITests.m */; };
+		8E854B3F223925D40083689D /* LEECellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B3E223925D40083689D /* LEECellModel.m */; };
+		8E854B42223926440083689D /* LEETableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B41223926440083689D /* LEETableViewCell.m */; };
+		8E854B4622392F6A0083689D /* LEEDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B4522392F6A0083689D /* LEEDetailVC.m */; };
+		8E854B4A22392FB90083689D /* LargeImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E854B4922392FB90083689D /* LargeImageView.m */; };
+		8EC1D780223B47420037F64B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC1D77F223B47420037F64B /* Assets.xcassets */; };
+		A55BF0C823225F5C007FEE50 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BF0C723225F5C007FEE50 /* UIImage+Color.m */; };
+		A55BF0CF2322C95E007FEE50 /* LEEBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A55BF0CE2322C95E007FEE50 /* LEEBaseViewController.m */; };
+		A59660D02327E8E90065CA59 /* LEETabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59660CF2327E8E90065CA59 /* LEETabBarViewController.swift */; };
+		A5C0EE7A2312BCCF00687E8D /* LEESwiftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C0EE792312BCCF00687E8D /* LEESwiftVC.swift */; };
+		A5C0EE822312EE5E00687E8D /* LEETools.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C0EE812312EE5E00687E8D /* LEETools.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E854B1E223923D40083689D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E854AFD223923C50083689D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E854B04223923C50083689D;
+			remoteInfo = LEEDemoForMVC;
+		};
+		8E854B29223923D40083689D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E854AFD223923C50083689D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E854B04223923C50083689D;
+			remoteInfo = LEEDemoForMVC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		410EDAA447C9F78AFF1DF4A4 /* Pods-LEEDemoForMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEEDemoForMVC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LEEDemoForMVC/Pods-LEEDemoForMVC.debug.xcconfig"; sourceTree = "<group>"; };
+		628182512402161960BBAD6E /* Pods_LEEDemoForMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LEEDemoForMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8521E649A0E7C864D9C3F7A1 /* Pods-LEEDemoForMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LEEDemoForMVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LEEDemoForMVC/Pods-LEEDemoForMVC.release.xcconfig"; sourceTree = "<group>"; };
+		8E49C2E22248A56D0073B34D /* LEEAutoScaleLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEEAutoScaleLayout.h; sourceTree = "<group>"; };
+		8E49C2E32248A56D0073B34D /* LEEAutoScaleLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEEAutoScaleLayout.m; sourceTree = "<group>"; };
+		8E854B05223923C50083689D /* LEEDemoForMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEEDemoForMVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E854B08223923C50083689D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8E854B09223923C50083689D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8E854B0B223923C50083689D /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8E854B0C223923C50083689D /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; usesTabs = 0; };
+		8E854B0F223923C50083689D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E854B14223923D40083689D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E854B16223923D40083689D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E854B17223923D40083689D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8E854B1D223923D40083689D /* LEEDemoForMVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LEEDemoForMVCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E854B21223923D40083689D /* LEEDemoForMVCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEEDemoForMVCTests.m; sourceTree = "<group>"; };
+		8E854B23223923D40083689D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E854B28223923D40083689D /* LEEDemoForMVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LEEDemoForMVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E854B2C223923D40083689D /* LEEDemoForMVCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEEDemoForMVCUITests.m; sourceTree = "<group>"; };
+		8E854B2E223923D40083689D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E854B3D223925D40083689D /* LEECellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEECellModel.h; sourceTree = "<group>"; };
+		8E854B3E223925D40083689D /* LEECellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEECellModel.m; sourceTree = "<group>"; };
+		8E854B40223926440083689D /* LEETableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEETableViewCell.h; sourceTree = "<group>"; };
+		8E854B41223926440083689D /* LEETableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEETableViewCell.m; sourceTree = "<group>"; };
+		8E854B4422392F6A0083689D /* LEEDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEEDetailVC.h; sourceTree = "<group>"; };
+		8E854B4522392F6A0083689D /* LEEDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEEDetailVC.m; sourceTree = "<group>"; usesTabs = 0; };
+		8E854B4822392FB90083689D /* LargeImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargeImageView.h; sourceTree = "<group>"; };
+		8E854B4922392FB90083689D /* LargeImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LargeImageView.m; sourceTree = "<group>"; };
+		8EBA0A31223A22AF00385159 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8EC1D77F223B47420037F64B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A55BF0C623225F5C007FEE50 /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		A55BF0C723225F5C007FEE50 /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		A55BF0CE2322C95E007FEE50 /* LEEBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEEBaseViewController.m; sourceTree = "<group>"; };
+		A55BF0D02322D6F1007FEE50 /* LEEBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEEBaseViewController.h; sourceTree = "<group>"; };
+		A59660CF2327E8E90065CA59 /* LEETabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEETabBarViewController.swift; sourceTree = "<group>"; };
+		A5C0EE782312BCCF00687E8D /* LEEDemoForMVC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LEEDemoForMVC-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5C0EE792312BCCF00687E8D /* LEESwiftVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEESwiftVC.swift; sourceTree = "<group>"; };
+		A5C0EE812312EE5E00687E8D /* LEETools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEETools.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E854B02223923C50083689D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142A0858CB3F777A764AB6FC /* Pods_LEEDemoForMVC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E854B1A223923D40083689D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E854B25223923D40083689D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54751A011FACC2A9EDBDE829 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				628182512402161960BBAD6E /* Pods_LEEDemoForMVC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E854AFC223923C50083689D = {
+			isa = PBXGroup;
+			children = (
+				8E854B07223923C50083689D /* LEEDemoForMVC */,
+				8E854B20223923D40083689D /* LEEDemoForMVCTests */,
+				8E854B2B223923D40083689D /* LEEDemoForMVCUITests */,
+				8E854B06223923C50083689D /* Products */,
+				AAE4CAA88E16DDBE60CDACF6 /* Pods */,
+				54751A011FACC2A9EDBDE829 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E854B06223923C50083689D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B05223923C50083689D /* LEEDemoForMVC.app */,
+				8E854B1D223923D40083689D /* LEEDemoForMVCTests.xctest */,
+				8E854B28223923D40083689D /* LEEDemoForMVCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E854B07223923C50083689D /* LEEDemoForMVC */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B08223923C50083689D /* AppDelegate.h */,
+				8E854B09223923C50083689D /* AppDelegate.m */,
+				8EBA0A31223A22AF00385159 /* PrefixHeader.pch */,
+				8EC1D77F223B47420037F64B /* Assets.xcassets */,
+				8E854B0E223923C50083689D /* Main.storyboard */,
+				8E854B13223923D40083689D /* LaunchScreen.storyboard */,
+				8E854B16223923D40083689D /* Info.plist */,
+				8E854B17223923D40083689D /* main.m */,
+				A5C0EE782312BCCF00687E8D /* LEEDemoForMVC-Bridging-Header.h */,
+				8E854B3A223925400083689D /* Model */,
+				8E854B3B223925480083689D /* View */,
+				8E854B3C223925500083689D /* Controller */,
+				A55BF0CB2322C8E7007FEE50 /* Tools */,
+				A55BF0CC2322C900007FEE50 /* Swift */,
+			);
+			path = LEEDemoForMVC;
+			sourceTree = "<group>";
+		};
+		8E854B20223923D40083689D /* LEEDemoForMVCTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B21223923D40083689D /* LEEDemoForMVCTests.m */,
+				8E854B23223923D40083689D /* Info.plist */,
+			);
+			path = LEEDemoForMVCTests;
+			sourceTree = "<group>";
+		};
+		8E854B2B223923D40083689D /* LEEDemoForMVCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B2C223923D40083689D /* LEEDemoForMVCUITests.m */,
+				8E854B2E223923D40083689D /* Info.plist */,
+			);
+			path = LEEDemoForMVCUITests;
+			sourceTree = "<group>";
+		};
+		8E854B3A223925400083689D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B3D223925D40083689D /* LEECellModel.h */,
+				8E854B3E223925D40083689D /* LEECellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E854B3B223925480083689D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B4722392F9C0083689D /* LargeImageView */,
+				8E854B40223926440083689D /* LEETableViewCell.h */,
+				8E854B41223926440083689D /* LEETableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E854B3C223925500083689D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B4322392F230083689D /* DetailVC */,
+				8E854B0B223923C50083689D /* MainViewController.h */,
+				8E854B0C223923C50083689D /* MainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E854B4322392F230083689D /* DetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B4422392F6A0083689D /* LEEDetailVC.h */,
+				8E854B4522392F6A0083689D /* LEEDetailVC.m */,
+			);
+			path = DetailVC;
+			sourceTree = "<group>";
+		};
+		8E854B4722392F9C0083689D /* LargeImageView */ = {
+			isa = PBXGroup;
+			children = (
+				8E854B4822392FB90083689D /* LargeImageView.h */,
+				8E854B4922392FB90083689D /* LargeImageView.m */,
+			);
+			path = LargeImageView;
+			sourceTree = "<group>";
+		};
+		A55BF0CB2322C8E7007FEE50 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A55BF0C623225F5C007FEE50 /* UIImage+Color.h */,
+				A55BF0C723225F5C007FEE50 /* UIImage+Color.m */,
+				8E49C2E22248A56D0073B34D /* LEEAutoScaleLayout.h */,
+				8E49C2E32248A56D0073B34D /* LEEAutoScaleLayout.m */,
+				A55BF0D02322D6F1007FEE50 /* LEEBaseViewController.h */,
+				A55BF0CE2322C95E007FEE50 /* LEEBaseViewController.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A55BF0CC2322C900007FEE50 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A5C0EE812312EE5E00687E8D /* LEETools.swift */,
+				A5C0EE792312BCCF00687E8D /* LEESwiftVC.swift */,
+				A59660CF2327E8E90065CA59 /* LEETabBarViewController.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		AAE4CAA88E16DDBE60CDACF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				410EDAA447C9F78AFF1DF4A4 /* Pods-LEEDemoForMVC.debug.xcconfig */,
+				8521E649A0E7C864D9C3F7A1 /* Pods-LEEDemoForMVC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E854B04223923C50083689D /* LEEDemoForMVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E854B31223923D40083689D /* Build configuration list for PBXNativeTarget "LEEDemoForMVC" */;
+			buildPhases = (
+				D78045D52BA1F414FBDAA660 /* [CP] Check Pods Manifest.lock */,
+				8E854B01223923C50083689D /* Sources */,
+				8E854B02223923C50083689D /* Frameworks */,
+				8E854B03223923C50083689D /* Resources */,
+				B0E0781DE6936BDCE09E9FC6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LEEDemoForMVC;
+			productName = LEEDemoForMVC;
+			productReference = 8E854B05223923C50083689D /* LEEDemoForMVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E854B1C223923D40083689D /* LEEDemoForMVCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E854B34223923D40083689D /* Build configuration list for PBXNativeTarget "LEEDemoForMVCTests" */;
+			buildPhases = (
+				8E854B19223923D40083689D /* Sources */,
+				8E854B1A223923D40083689D /* Frameworks */,
+				8E854B1B223923D40083689D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E854B1F223923D40083689D /* PBXTargetDependency */,
+			);
+			name = LEEDemoForMVCTests;
+			productName = LEEDemoForMVCTests;
+			productReference = 8E854B1D223923D40083689D /* LEEDemoForMVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E854B27223923D40083689D /* LEEDemoForMVCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E854B37223923D40083689D /* Build configuration list for PBXNativeTarget "LEEDemoForMVCUITests" */;
+			buildPhases = (
+				8E854B24223923D40083689D /* Sources */,
+				8E854B25223923D40083689D /* Frameworks */,
+				8E854B26223923D40083689D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E854B2A223923D40083689D /* PBXTargetDependency */,
+			);
+			name = LEEDemoForMVCUITests;
+			productName = LEEDemoForMVCUITests;
+			productReference = 8E854B28223923D40083689D /* LEEDemoForMVCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E854AFD223923C50083689D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LEE;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = YuanLee;
+				TargetAttributes = {
+					8E854B04223923C50083689D = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
+					};
+					8E854B1C223923D40083689D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8E854B04223923C50083689D;
+					};
+					8E854B27223923D40083689D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8E854B04223923C50083689D;
+					};
+				};
+			};
+			buildConfigurationList = 8E854B00223923C50083689D /* Build configuration list for PBXProject "LEEDemoForMVC" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E854AFC223923C50083689D;
+			productRefGroup = 8E854B06223923C50083689D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E854B04223923C50083689D /* LEEDemoForMVC */,
+				8E854B1C223923D40083689D /* LEEDemoForMVCTests */,
+				8E854B27223923D40083689D /* LEEDemoForMVCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E854B03223923C50083689D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E854B15223923D40083689D /* LaunchScreen.storyboard in Resources */,
+				8EC1D780223B47420037F64B /* Assets.xcassets in Resources */,
+				8E854B10223923C50083689D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E854B1B223923D40083689D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E854B26223923D40083689D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0E0781DE6936BDCE09E9FC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LEEDemoForMVC/Pods-LEEDemoForMVC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LEEDemoForMVC/Pods-LEEDemoForMVC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LEEDemoForMVC/Pods-LEEDemoForMVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D78045D52BA1F414FBDAA660 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LEEDemoForMVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E854B01223923C50083689D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E854B3F223925D40083689D /* LEECellModel.m in Sources */,
+				8E854B0D223923C50083689D /* MainViewController.m in Sources */,
+				8E854B4A22392FB90083689D /* LargeImageView.m in Sources */,
+				8E854B18223923D40083689D /* main.m in Sources */,
+				8E49C2E42248A56D0073B34D /* LEEAutoScaleLayout.m in Sources */,
+				8E854B42223926440083689D /* LEETableViewCell.m in Sources */,
+				A55BF0CF2322C95E007FEE50 /* LEEBaseViewController.m in Sources */,
+				8E854B4622392F6A0083689D /* LEEDetailVC.m in Sources */,
+				A5C0EE7A2312BCCF00687E8D /* LEESwiftVC.swift in Sources */,
+				A55BF0C823225F5C007FEE50 /* UIImage+Color.m in Sources */,
+				A59660D02327E8E90065CA59 /* LEETabBarViewController.swift in Sources */,
+				8E854B0A223923C50083689D /* AppDelegate.m in Sources */,
+				A5C0EE822312EE5E00687E8D /* LEETools.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E854B19223923D40083689D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E854B22223923D40083689D /* LEEDemoForMVCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E854B24223923D40083689D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E854B2D223923D40083689D /* LEEDemoForMVCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E854B1F223923D40083689D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E854B04223923C50083689D /* LEEDemoForMVC */;
+			targetProxy = 8E854B1E223923D40083689D /* PBXContainerItemProxy */;
+		};
+		8E854B2A223923D40083689D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E854B04223923C50083689D /* LEEDemoForMVC */;
+			targetProxy = 8E854B29223923D40083689D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E854B0E223923C50083689D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E854B0F223923C50083689D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E854B13223923D40083689D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E854B14223923D40083689D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E854B2F223923D40083689D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8E854B30223923D40083689D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E854B32223923D40083689D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 410EDAA447C9F78AFF1DF4A4 /* Pods-LEEDemoForMVC.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 8K55298386;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LEEDemoForMVC/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"${SRCROOT}/**",
+				);
+				INFOPLIST_FILE = LEEDemoForMVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.yuanlee.LEEDemoForMVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LEEDemoForMVC/LEEDemoForMVC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/**",
+					"${PODS_ROOT}",
+				);
+			};
+			name = Debug;
+		};
+		8E854B33223923D40083689D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8521E649A0E7C864D9C3F7A1 /* Pods-LEEDemoForMVC.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = 8K55298386;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LEEDemoForMVC/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/MJRefresh\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"${SRCROOT}/**",
+				);
+				INFOPLIST_FILE = LEEDemoForMVC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.yuanlee.LEEDemoForMVC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LEEDemoForMVC/LEEDemoForMVC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = (
+					"${SRCROOT}/**",
+					"${PODS_ROOT}",
+				);
+			};
+			name = Release;
+		};
+		8E854B35223923D40083689D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34CX627AKS;
+				INFOPLIST_FILE = LEEDemoForMVCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.yuanlee.LEEDemoForMVCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LEEDemoForMVC.app/LEEDemoForMVC";
+			};
+			name = Debug;
+		};
+		8E854B36223923D40083689D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34CX627AKS;
+				INFOPLIST_FILE = LEEDemoForMVCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.yuanlee.LEEDemoForMVCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LEEDemoForMVC.app/LEEDemoForMVC";
+			};
+			name = Release;
+		};
+		8E854B38223923D40083689D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34CX627AKS;
+				INFOPLIST_FILE = LEEDemoForMVCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.yuanlee.LEEDemoForMVCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LEEDemoForMVC;
+			};
+			name = Debug;
+		};
+		8E854B39223923D40083689D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34CX627AKS;
+				INFOPLIST_FILE = LEEDemoForMVCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.yuanlee.LEEDemoForMVCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LEEDemoForMVC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E854B00223923C50083689D /* Build configuration list for PBXProject "LEEDemoForMVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E854B2F223923D40083689D /* Debug */,
+				8E854B30223923D40083689D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E854B31223923D40083689D /* Build configuration list for PBXNativeTarget "LEEDemoForMVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E854B32223923D40083689D /* Debug */,
+				8E854B33223923D40083689D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E854B34223923D40083689D /* Build configuration list for PBXNativeTarget "LEEDemoForMVCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E854B35223923D40083689D /* Debug */,
+				8E854B36223923D40083689D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E854B37223923D40083689D /* Build configuration list for PBXNativeTarget "LEEDemoForMVCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E854B38223923D40083689D /* Debug */,
+				8E854B39223923D40083689D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E854AFD223923C50083689D /* Project object */;
+}

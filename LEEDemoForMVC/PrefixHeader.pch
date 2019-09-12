@@ -1,0 +1,61 @@
+//
+//  PrefixHeader.pch
+//  LEEDemoForMVC
+//
+//  Created by iOS on 2019/3/14.
+//  Copyright © 2019 YuanLee. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#pragma mark -- 屏幕宽高
+#define LEESWidth [UIScreen mainScreen].bounds.size.width
+#define LEESHeight [UIScreen mainScreen].bounds.size.height
+
+#pragma mark -- 颜色处理
+#define LEEHexColor(c, a) [UIColor colorWithRed:(((c >> 16) & 0xFF) / 255.0) \
+                                          green:(((c >> 8) & 0xFF) / 255.0) \
+                                           blue:(((c) & 0xFF)/ 255.0) \
+                                          alpha:a]
+
+#define RGBA_HEX(rgb,a) [UIColor colorWithRed:((float)((rgb & 0xFF0000) >> 16))/255.0 green:((float)((rgb & 0xFF00) >> 8))/255.0 blue:((float)(rgb & 0xFF))/255.0 alpha:a]
+#define RGB_HEX(rgb) [UIColor colorWithRed:((float)((rgb & 0xFF0000) >> 16))/255.0 green:((float)((rgb & 0xFF00) >> 8))/255.0 blue:((float)(rgb & 0xFF))/255.0 alpha:1.0] // 如RGB_HEX(0x027A34)
+#define RGB_DECIMAL(r,g,b) [UIColor colorWithRed:((float)r)/255.0 green:((float)g)/255.0 blue:((float)b)/255.0 alpha:1.0]
+
+//获得屏幕的宽高
+#define kScreenWidth ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+//iPhoneX / iPhoneXS
+#define  isIphoneX_XS     (kScreenWidth == 375.f && kScreenHeight == 812.f ? YES : NO)
+//iPhoneXR / iPhoneXSMax
+#define  isIphoneXR_XSMax    (kScreenWidth == 414.f && kScreenHeight == 896.f ? YES : NO)
+//异性全面屏
+#define   isFullScreen    (isIphoneX_XS || isIphoneXR_XSMax)
+
+// Status bar height.
+#define  StatusBarHeight     (isFullScreen ? 44.f : 20.f)
+
+// Navigation bar height.
+#define  NavigationBarHeight  44.f
+
+// Tabbar height.
+#define  TabbarHeight         (isFullScreen ? (49.f+34.f) : 49.f)
+
+// Tabbar safe bottom margin.
+#define  TabbarSafeBottomMargin         (isFullScreen ? 34.f : 0.f)
+
+// Status bar & navigation bar height.
+#define  StatusBarAndNavigationBarHeight  (isFullScreen ? 88.f : 64.f)
+
+
+#import "SDAutoLayout.h"
+
+#import "MBProgressHUD.h"
+#import "SDWebImageManager.h"
+#import <SDWebImage/SDWebImage.h>
+
+#import "LEEAutoScaleLayout.h"
+#import "LEEBaseViewController.h"
+
+#endif /* PrefixHeader_pch */
